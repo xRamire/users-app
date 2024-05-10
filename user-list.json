@@ -1,0 +1,52 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "type": "demandante",
+      "personalData": {
+        "nifPassport": "12345678A",
+        "firstName": "Juan",
+        "lastName": "Perez",
+        "gender": "Male",
+        "dateOfBirth": "1990-05-15"
+      },
+      "address": {
+        "street": "Main Street",
+        "number": "123",
+        "postalCode": "28001",
+        "city": "Madrid"
+      },
+      "studies": [
+        {
+          "institutionName": "University X",
+          "degree": "Computer Engineering",
+          "date": "2010-2014"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "empleado",
+      "personalData": {
+        "nifPassport": "98765432B",
+        "firstName": "Maria",
+        "lastName": "Gonzalez",
+        "gender": "Female",
+        "dateOfBirth": "1985-12-10"
+      },
+      "address": {
+        "street": "Secondary Avenue",
+        "number": "456",
+        "postalCode": "41002",
+        "city": "Seville"
+      },
+      "workExperience": [
+        {
+          "companyName": "Company A",
+          "position": "Frontend Developer",
+          "date": "2010-2015"
+        }
+      ]
+    }
+  ]
+}
