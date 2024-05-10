@@ -1,3 +1,6 @@
+## Install
+Run `npm install`
+
 ## Run the app
 
 Run `npm start` or `ng serve` for the client side. Navigate to `http://localhost:4200/`.  
