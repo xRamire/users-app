@@ -1,1 +1,11 @@
-<p>user-card works!</p>
+<div class="user-card-container pointer" (click)="navigateToDetails(user.id)">
+    <div *ngIf="user" class="user-card">
+      <div class="user-name">{{ user.personalData.firstName }} {{ user.personalData.lastName }}</div>
+      <div class="user-info">
+        <div class="user-info-item">NIF/Passport: {{ user.personalData.nifPassport }}</div>
+        <div class="user-info-item">Gender: {{ user.personalData.gender }}</div>
+        <div class="user-info-item">Date of Birth: {{ user.personalData.dateOfBirth }}</div>
+      </div>
+    </div>
+  </div>
+  

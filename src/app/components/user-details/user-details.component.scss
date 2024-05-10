@@ -1,0 +1,32 @@
+.user-details {
+    max-width: 800px; /* Limitar el ancho del contenido */
+    margin: 0 auto; /* Centrar horizontalmente */
+  
+    h2 {
+      text-align: center; /* Centrar el título */
+      margin-bottom: 20px; /* Espacio inferior */
+    }
+  
+    .mat-tab-group {
+      width: 100%; /* Ancho completo del tab group */
+    }
+  
+    .tab-content {
+      padding: 20px; /* Espaciado interno */
+    }
+  
+    /* Estilos responsivos para pantallas más pequeñas */
+    @media (max-width: 768px) {
+      .user-details {
+        padding: 20px; /* Añadir espaciado interno en pantallas pequeñas */
+      }
+    }
+  
+    /* Estilos responsivos para pantallas aún más pequeñas */
+    @media (max-width: 576px) {
+      .user-details {
+        max-width: 90%; /* Reducir el ancho máximo */
+      }
+    }
+  }
+  

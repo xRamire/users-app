@@ -1,0 +1,38 @@
+<div *ngIf="user" class="user-details">
+    <h2>User Details</h2>
+  
+    <mat-tab-group>
+      <!-- Datos Personales -->
+      <mat-tab label="Personal Data">
+        <div class="tab-content">
+          <p>First Name: {{ user.personalData.firstName }}</p>
+          <p>Last Name: {{ user.personalData.lastName }}</p>
+          <p>NIF/Passport: {{ user.personalData.nifPassport }}</p>
+          <p>Gender: {{ user.personalData.gender }}</p>
+          <p>Date of Birth: {{ user.personalData.dateOfBirth }}</p>
+        </div>
+      </mat-tab>
+  
+      <!-- Dirección -->
+      <mat-tab label="Address">
+        <div class="tab-content">
+          <p>Street: {{ user.address.street }}</p>
+          <p>Number: {{ user.address.number }}</p>
+          <p>Postal Code: {{ user.address.postalCode }}</p>
+          <p>City: {{ user.address.city }}</p>
+        </div>
+      </mat-tab>
+  
+      <!-- Estudios -->
+      <mat-tab label="Studies">
+        <div class="tab-content">
+          <div *ngFor="let study of user.studies">
+            <p>Institution Name: {{ study.institutionName }}</p>
+            <p>Degree: {{ study.degree }}</p>
+            <p>Date: {{ study.date }}</p>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  
